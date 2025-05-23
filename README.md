@@ -2,7 +2,9 @@
 
 <div align="center">
 
-![AntiDDoSPro Banner](https://i.imgur.com/placeholder.png)
+<div align="center">
+  <img src="https://raw.githubusercontent.com/teaminfinitydev/AntiDDoSPro/refs/heads/main/animated-svg-banner.svg" alt="AntiDDoSPro Banner">
+</div>
 
 [![Version](https://img.shields.io/github/v/release/teaminfinitydev/AntiDDoSPro?style=flat-square)](https://github.com/teaminfinitydev/AntiDDoSPro/releases)
 [![License](https://img.shields.io/github/license/teaminfinitydev/AntiDDoSPro?style=flat-square)](LICENSE)
