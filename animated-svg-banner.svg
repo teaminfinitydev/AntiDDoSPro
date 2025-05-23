@@ -1,0 +1,123 @@
+<svg width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#13111c" />
+      <stop offset="100%" stop-color="#2b2640" />
+    </linearGradient>
+    <linearGradient id="title-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7b68ee" />
+      <stop offset="100%" stop-color="#00bfff" />
+    </linearGradient>
+    <linearGradient id="shield-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7b68ee" />
+      <stop offset="100%" stop-color="#00bfff" />
+    </linearGradient>
+    
+    <!-- Network line animation -->
+    <linearGradient id="line-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="transparent" />
+      <stop offset="50%" stop-color="#7b68ee" />
+      <stop offset="100%" stop-color="transparent" />
+    </linearGradient>
+    
+    <!-- Shield path -->
+    <clipPath id="shield-path">
+      <path d="M 90 10 C 130 25 180 30 180 30 C 180 30 180 90 180 140 C 180 180 90 210 90 210 C 90 210 0 180 0 140 C 0 90 0 30 0 30 C 0 30 50 25 90 10 Z" />
+    </clipPath>
+    <clipPath id="shield-inner-path">
+      <path d="M 70 20 C 100 30 140 35 140 35 C 140 35 140 80 140 120 C 140 150 70 170 70 170 C 70 170 0 150 0 120 C 0 80 0 35 0 35 C 0 35 40 30 70 20 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Banner background -->
+  <rect width="800" height="200" rx="12" fill="url(#bg-gradient)" />
+  
+  <!-- Minecraft blocks -->
+  <rect x="650" y="30" width="30" height="30" fill="#5d5d5d" stroke="#484848" stroke-width="3" opacity="0.2" />
+  <rect x="120" y="150" width="30" height="30" fill="#5d5d5d" stroke="#484848" stroke-width="3" opacity="0.2" />
+  <rect x="200" y="50" width="30" height="30" fill="#5d5d5d" stroke="#484848" stroke-width="3" opacity="0.2" />
+  <rect x="500" y="140" width="30" height="30" fill="#5d5d5d" stroke="#484848" stroke-width="3" opacity="0.2" />
+  
+  <!-- Animated network lines -->
+  <rect width="300" height="2" fill="url(#line-gradient)" opacity="0.5" y="40">
+    <animate attributeName="x" values="-300; 800" dur="3s" repeatCount="indefinite" />
+  </rect>
+  <rect width="400" height="2" fill="url(#line-gradient)" opacity="0.5" y="80">
+    <animate attributeName="x" values="-400; 800" dur="4s" repeatCount="indefinite" begin="1s" />
+  </rect>
+  <rect width="200" height="2" fill="url(#line-gradient)" opacity="0.5" y="120">
+    <animate attributeName="x" values="-200; 800" dur="3.5s" repeatCount="indefinite" begin="0.5s" />
+  </rect>
+  <rect width="350" height="2" fill="url(#line-gradient)" opacity="0.5" y="160">
+    <animate attributeName="x" values="-350; 800" dur="4.5s" repeatCount="indefinite" begin="2s" />
+  </rect>
+  
+  <!-- Animated particles -->
+  <g>
+    <circle r="3" fill="#7b68ee">
+      <animate attributeName="cx" values="100; 130" dur="8s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="200; -10" dur="8s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.6; 0.6; 0" dur="8s" repeatCount="indefinite" />
+    </circle>
+    <circle r="3" fill="#7b68ee">
+      <animate attributeName="cx" values="200; 230" dur="8s" repeatCount="indefinite" begin="2s" />
+      <animate attributeName="cy" values="200; -10" dur="8s" repeatCount="indefinite" begin="2s" />
+      <animate attributeName="opacity" values="0; 0.6; 0.6; 0" dur="8s" repeatCount="indefinite" begin="2s" />
+    </circle>
+    <circle r="3" fill="#7b68ee">
+      <animate attributeName="cx" values="300; 330" dur="8s" repeatCount="indefinite" begin="4s" />
+      <animate attributeName="cy" values="200; -10" dur="8s" repeatCount="indefinite" begin="4s" />
+      <animate attributeName="opacity" values="0; 0.6; 0.6; 0" dur="8s" repeatCount="indefinite" begin="4s" />
+    </circle>
+    <circle r="3" fill="#7b68ee">
+      <animate attributeName="cx" values="400; 430" dur="8s" repeatCount="indefinite" begin="1s" />
+      <animate attributeName="cy" values="200; -10" dur="8s" repeatCount="indefinite" begin="1s" />
+      <animate attributeName="opacity" values="0; 0.6; 0.6; 0" dur="8s" repeatCount="indefinite" begin="1s" />
+    </circle>
+    <circle r="3" fill="#7b68ee">
+      <animate attributeName="cx" values="500; 530" dur="8s" repeatCount="indefinite" begin="3s" />
+      <animate attributeName="cy" values="200; -10" dur="8s" repeatCount="indefinite" begin="3s" />
+      <animate attributeName="opacity" values="0; 0.6; 0.6; 0" dur="8s" repeatCount="indefinite" begin="3s" />
+    </circle>
+    <circle r="3" fill="#7b68ee">
+      <animate attributeName="cx" values="600; 630" dur="8s" repeatCount="indefinite" begin="0.5s" />
+      <animate attributeName="cy" values="200; -10" dur="8s" repeatCount="indefinite" begin="0.5s" />
+      <animate attributeName="opacity" values="0; 0.6; 0.6; 0" dur="8s" repeatCount="indefinite" begin="0.5s" />
+    </circle>
+  </g>
+  
+  <!-- Shield -->
+  <g transform="translate(620, 100)">
+    <g transform="scale(0.8)">
+      <path d="M 90 10 C 130 25 180 30 180 30 C 180 30 180 90 180 140 C 180 180 90 210 90 210 C 90 210 0 180 0 140 C 0 90 0 30 0 30 C 0 30 50 25 90 10 Z" fill="url(#shield-gradient)" />
+      <path d="M 70 20 C 100 30 140 35 140 35 C 140 35 140 80 140 120 C 140 150 70 170 70 170 C 70 170 0 150 0 120 C 0 80 0 35 0 35 C 0 35 40 30 70 20 Z" fill="#2b2640" />
+      <text x="70" y="110" font-size="60" text-anchor="middle" fill="white" font-weight="bold">⚡</text>
+    </g>
+  </g>
+  
+  <!-- Text content -->
+  <g transform="translate(50, 80)">
+    <text font-family="Segoe UI, Arial, sans-serif" font-size="48" font-weight="800" fill="url(#title-gradient)">
+      AntiDDoSPro
+    </text>
+    <text y="40" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="500" fill="white" opacity="0.9">
+      Advanced DDoS Protection for Minecraft Servers
+    </text>
+    
+    <!-- Features -->
+    <g transform="translate(0, 80)">
+      <circle cx="14" cy="14" r="14" fill="rgba(123, 104, 238, 0.2)" />
+      <text x="14" y="19" font-family="Segoe UI, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#7b68ee">✓</text>
+      <text x="35" y="18" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="white">Rate Limiting</text>
+      
+      <circle cx="154" cy="14" r="14" fill="rgba(123, 104, 238, 0.2)" />
+      <text x="154" y="19" font-family="Segoe UI, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#7b68ee">✓</text>
+      <text x="175" y="18" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="white">IP Filtering</text>
+      
+      <circle cx="294" cy="14" r="14" fill="rgba(123, 104, 238, 0.2)" />
+      <text x="294" y="19" font-family="Segoe UI, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#7b68ee">✓</text>
+      <text x="315" y="18" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="white">GeoIP Blocking</text>
+    </g>
+  </g>
+</svg>
