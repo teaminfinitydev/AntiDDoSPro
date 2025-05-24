@@ -180,6 +180,10 @@ AntiDDoSPro is licensed under the [MIT License](LICENSE). See the LICENSE file f
 ---
 
 <div align="center">
-  <img src="https://i.imgur.com/placeholder.png" width="100" alt="CodeNexa Logo">
-  <p>Made with ❤️ by <a href="https://codenexa.online">CodeNexa</a></p>
+
+Made with ❤️ by [Chamika Samaraweera](https://github.com/teaminfinitydev)
+
+[![Web](https://img.shields.io/badge/Web-TeamInfinity-blue)](teaminfinity.pro)
+[![Twitter Follow](https://img.shields.io/twitter/follow/teaminfdev?style=social)](https://twitter.com/teaminfdev)
+
 </div>
